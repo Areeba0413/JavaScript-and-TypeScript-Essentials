@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+      <style>
+    /* Container for all product cards */
+    #product-list {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+
+    /* Individual product card */
+    .product-card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 15px 20px;
+      width: 200px;
+      transition: transform 0.2s ease;
+    }
+
+    /* Hover effect */
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+
+    /* Product title */
+    .product-card h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.25rem;
+      color: #333;
+    }
+  </style>
+
+</head>
+<body>
+    <div  id="product-list" class="product-list"></div>
+    <script>
+        const products = [
+            { id: 1, name: "Laptop", price: 1000, inStock: true },
+            { id: 2, name: "Phone", price: 500, inStock: false },
+            { id: 3, name: "Tablet", price: 700, inStock: true }
+];
+
+        const container = document.getElementById('product-list');
+
+        products.map(product => {
+            const card= document.createElement('div');
+            card.className='product-card';
+            card.innerHTML=`
+            <h3>${product.name}</h3>
+            <p>Price: ${product.price}</p>
+            <p>Status: ${product.inStock}</p>`;
+            return card;
+        }).forEach(card => container.appendChild(card));
+    </script>
+</body>
+</html>

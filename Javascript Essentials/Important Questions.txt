@@ -1,0 +1,14 @@
+what is Map function in Js?
+how to access object elements using Map?
+how to format object elements using Map?
+how to format date object?
+what are template literals?
+how to render DOM Elements using Map?
+why return statement is important in it?
+why forEach function used with Map function while rendering DOM elements?
+why use appendChild() function with Map function?
+what is filter function in js?
+what is find function in js?
+what is the difference between filter and find function? 
+what if filter function cannot find any object? what is returned?
+what if find function cannot find any object? what is returned?
