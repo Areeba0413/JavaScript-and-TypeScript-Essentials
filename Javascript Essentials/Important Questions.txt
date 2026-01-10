@@ -18,8 +18,15 @@ what if find function cannot find any object? what is returned?
 Task #2
 what is an object?
 what is spread operator in js?
+	-Using spread operator with builtin functions
+	-Using spread operator with string
+	-Using spread operator with multiple arrays
+	-Using spread operator with userdefined function
+	-Using spread operator with Object
+usage of .join() function with spread operator.
 what is rest operator in js?
 Difference between rest and spread operator in js?
+what is destructuring?
 what is object destructuring?
 what is nested object destructuring?
 JavaScript Value vs Reference Types.
