@@ -40,3 +40,35 @@ let [a,b,c,d] = newEntries;
 console.log(a,b,c,d);
 console.log(...a, ...b, ...c, ...d);
 
+                                    //spread Operator usage
+
+//separate address using spread operator
+const addressCopy = { ...user.address };
+console.log(addressCopy.city);    // New York
+console.log(addressCopy.country); // USA
+
+//Separate hobbies using spread operator
+const hobbiesCopy = [...user.hobbies];
+console.log(hobbiesCopy[0]); // reading
+console.log(hobbiesCopy[1]); // coding
+
+//Store each value in separate variables (using spread + indexing)
+const [...hobbies] = user.hobbies;
+const firstHobby = hobbies[0];
+const secondHobby = hobbies[1];
+
+console.log(firstHobby);  // reading
+console.log(secondHobby); // coding
+
+//Clean & Professional Way (spread + destructuring together)
+const address = { ...user.address };
+const hobbiess = [...user.hobbies];
+//hobbiess[1] = "writing";
+const { city, country } = address;
+const [hobby1, hobby2] = hobbiess;
+
+console.log(city, country, hobby1, hobby2);
+
+
+
+

@@ -25,6 +25,7 @@ what is spread operator in js?
 	-Using spread operator with Object
 usage of .join() function with spread operator.
 what is rest operator in js?
+	-Using rest operator with strings and arrays.
 Difference between rest and spread operator in js?
 what is destructuring?
 what is object destructuring?
