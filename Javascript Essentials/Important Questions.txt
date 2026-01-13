@@ -1,5 +1,3 @@
-Task #1
-
 what is Map function in Js?
 how to access object elements using Map?
 how to format object elements using Map?
@@ -15,7 +13,7 @@ what is the difference between filter and find function?
 what if filter function cannot find any object? what is returned?
 what if find function cannot find any object? what is returned?
 
-Task #2
+
 what is an object?
 what is spread operator in js?
 	-Using spread operator with builtin functions
@@ -31,4 +29,11 @@ what is destructuring?
 what is object destructuring?
 what is nested object destructuring?
 JavaScript Value vs Reference Types.
+
+
+let vs const vs var
+Template literals
+Default parameters 
+Arrow functions 
+ES6 modules
 function object.entries
