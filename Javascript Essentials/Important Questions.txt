@@ -37,3 +37,7 @@ Default parameters
 Arrow functions 
 ES6 modules
 function object.entries
+Optional Chaining (?.)
+Nullish coalescing (??)
+
+Closure
