@@ -1,0 +1,25 @@
+//Closure with Parameters
+function greet(name) {
+  return function (message) {
+    console.log(`${message}, ${name}`);
+  };
+}
+
+const greetAreeba = greet("Areeba");
+greetAreeba("Good Morning");
+
+//example to pass parameters differently
+
+function outer(x) {
+  return function inner(y) {
+    return x + y;
+  };
+}
+
+//Use only for quick one-off calls or small scripts
+console.log(outer(5)(3));
+
+//Assign to a variable (Reusable)
+const add5 = outer(5); // add5 is now inner function
+console.log(add5(3));  // 8
+

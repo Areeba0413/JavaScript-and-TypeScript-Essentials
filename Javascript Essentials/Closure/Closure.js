@@ -58,4 +58,14 @@ console.log(add2());  // 1 (counter2 = 1) - Different counter!
 console.log(add1());  // 3 (counter1 = 3)
 console.log(add2());  // 2 (counter2 = 2) - Independent!
 
-            
+/*         
+Lexical Scope
+Where a function can access variables, determined by where the function is written in the code.
+
+Lexical Environment:
+The actual memory/storage structure that stores variables, functions, and their scopes.
+•	Every function has a lexical environment
+•	Contains:
+o	Its own variables
+o	Reference to outer environment (parent scope)
+*/
