@@ -40,4 +40,5 @@ function object.entries
 Optional Chaining (?.)
 Nullish coalescing (??)
 
-Closure
+what is Closure function and lexical environment?
+Is it important for a function to have a return function to be closure?
