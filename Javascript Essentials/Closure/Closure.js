@@ -28,3 +28,29 @@
 //Create private variables
 //Preserve state between function calls
 
+                                //Counter Function using closure
+
+function createCounter() {
+  let counter = 0;  // ← This would normally be destroyed...
+  
+  return function() {
+    counter += 1;    // ← But it's kept alive because this function needs it!
+    return counter;
+  }
+}  // ← Function ends, but counter survives!
+
+const add = createCounter();
+// counter is "trapped" inside the returned function
+// It can't be accessed directly, but add() can use it.
+
+                               //Multiple counters can be created by declaring new variables
+const add1 = createCounter();  // createCounter() runs - creates counter1
+const add2 = createCounter();  // createCounter() runs AGAIN - creates counter2
+
+console.log(add1());  // 1 (counter1 = 1)
+console.log(add1());  // 2 (counter1 = 2)
+console.log(add2());  // 1 (counter2 = 1) - Different counter!
+console.log(add1());  // 3 (counter1 = 3)
+console.log(add2());  // 2 (counter2 = 2) - Independent!
+
+
