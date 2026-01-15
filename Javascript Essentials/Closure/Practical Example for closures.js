@@ -25,4 +25,18 @@ function createBankAccount(initialBalance) {
 const myAccount = createBankAccount(100);
 myAccount.deposit(50);   // Deposited 50. New balance: 150
 myAccount.withdraw(30);  // Withdrew 30. New balance: 120
-console.log(myAccount.getBalance());  // 120
+console.log(myAccount.getBalance());  // 120 
+
+
+//simple example
+function createBankAccount(initial) {
+  let balance = initial;
+  return {
+    deposit(amount){ balance += amount; return balance },
+    withdraw(amount){ balance -= amount; return balance }
+  }
+}
+
+const myBankAccount = createBankAccount(1000);
+console.log(myBankAccount.deposit(300));
+console.log(myBankAccount.withdraw(400));
