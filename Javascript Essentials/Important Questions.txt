@@ -47,7 +47,7 @@ what is Closure function and lexical environment?
 	multiple closures
 
 what is Event Loop?
-How the Event Loop Works? (Call Stack, Web APIs, Task Queue
+How the Event Loop Works? (Call Stack, Web APIs, Task Queue).
 what are synchronous and asynchronous operations/tasks?
 concept of blocking callstack due to slow/delayed synchronous tasks
 concept of flooding the task queue and callstack due to slow/delayed asynchrous tasks.
