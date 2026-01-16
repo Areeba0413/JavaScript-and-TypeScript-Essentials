@@ -41,4 +41,7 @@ Optional Chaining (?.)
 Nullish coalescing (??)
 
 what is Closure function and lexical environment?
-Is it important for a function to have a return function to be closure?
+	Is it important for a function to have a return function to be closure?(closure misconception)
+	closure wth parameters
+	closure with private variables
+	multiple closures
