@@ -106,8 +106,8 @@ setTimeout(function timeout() {     //queued 4th -> moved to webspis
 }, 1000);
 
                                                 //Example #6
-//what is Blocking event loop?
-//putting a slow code on synchronous operations which is processed on callstack fora long time
+//what is Blocking in event loop?
+//putting a slow code on synchronous operations which is processed on callstack for a long time
 //browser repaints/loads screen very quickly every 16millisecs to render elements on screen (render queue)
 //but if callstack is processing slowed/delayed code then render gets blocked and you cannot click or 
 // do anything onscreen
